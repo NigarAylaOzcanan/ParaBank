@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class Parent {
     public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(5));
@@ -59,6 +60,31 @@ public class Parent {
     }
     public void waitUntilElementToBeClickable(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+    public static int randomGenerator(int range) {
+        return (int) (Math.random() * range);
+    }
+    public static boolean listContainsString(List<WebElement> list, String search) {
+        boolean isFound = false;
+        for (WebElement e : list) {
+            if (e.getText().equalsIgnoreCase(search))
+                isFound = true;
+        }
+        return isFound;
+    }
+    public static boolean compareLists(List<WebElement> list1, List<String> list2) {
+        // Check if the lists are of equal size
+        if (list1.size() != list2.size()) {
+            return false;
+        }
+
+        // Iterate through the elements of both lists and compare them
+        for (int i = 0; i < list1.size(); i++) {
+            if (!list1.get(i).getText().equals(list2.get(i))) {
+                return false;
+            }
+        }
+        return true;
     }
     public void wait(int sn) {
         try {
