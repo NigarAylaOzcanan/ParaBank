@@ -20,25 +20,20 @@ public class Parent {
         scrollToElement(element);
         element.click();
     }
-
     public void mySendKeys(WebElement element, String text) {
         wait.until(ExpectedConditions.visibilityOf(element));
         scrollToElement(element);
         element.clear();
         element.sendKeys(text);
     }
-
     public void scrollToElement(WebElement element){
         JavascriptExecutor js=(JavascriptExecutor) GWD.getDriver();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
-
     public void verifyContainsText(WebElement element, String value){
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
-
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
-
     }
     public void myJsClick(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -62,7 +57,6 @@ public class Parent {
     public void waitUntilVisibilityOf(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
-
     public void waitUntilElementToBeClickable(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
