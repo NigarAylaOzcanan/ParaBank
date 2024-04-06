@@ -59,6 +59,13 @@ public class Parent {
         wait.until(ExpectedConditions.visibilityOf(element));
         new Actions(GWD.getDriver()).moveToElement(element).build().perform();
     }
+    public void waitUntilVisibilityOf(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public void waitUntilElementToBeClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
     public void wait(int sn) {
         try {
             Thread.sleep(sn * 1000);
