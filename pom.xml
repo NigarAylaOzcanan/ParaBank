@@ -27,7 +27,6 @@
             <artifactId>cucumber-java</artifactId>
             <version>7.15.0</version>
             <scope>test</scope>
-
         </dependency>
 
         <dependency>
@@ -42,7 +41,6 @@
             <artifactId>cucumber-testng</artifactId>
             <version>7.15.0</version>
             <scope>test</scope>
-
         </dependency>
 
         <dependency>
