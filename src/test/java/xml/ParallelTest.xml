@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
+
+<suite name="my suite" parallel="tests" thread-count="2">
+
+    <test name="test1">
+        <parameter name="browserType" value="edge"></parameter>
+
+        <classes>
+            <class name="runners.ParallelTest"></class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <parameter name="browserType" value="firefox"></parameter>
+
+        <classes>
+            <class name="runners.ParallelTest"></class>
+        </classes>
+    </test>
+
+</suite>
