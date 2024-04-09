@@ -1,51 +1,16 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import pages.Parent;
-import pages.US601_Content;
-import utilities.ConfigReader;
-import utilities.GWD;
+import pages.US606_Content;
 
 public class _LoginSteps_ extends Parent {
+    US606_Content us6 = new US606_Content();
 
-    US601_Content us1 = new US601_Content();
-
-    @Given("Navigate to Parabank website")
-    public void navigateToParabankWebsite() {
-        GWD.getDriver().get(ConfigReader.getProperty("URL"));
-    }
-
-    @When("Click on the Register button")
-    public void clickOnTheRegisterButton() {
-        myClick(us1.registerBtn);
-
-    }
-
-    @Then("Fill the registration information")
-    public void fillTheRegistrationInformation() {
-        mySendKeys(us1.customerForm.get(0), "Arpan");
-        mySendKeys(us1.customerForm.get(1), "Isaacson");
-        mySendKeys(us1.customerForm.get(2), "Ratios St 5206, Frankewing, Philippines, 848608");
-        mySendKeys(us1.customerForm.get(3), "Pella");
-        mySendKeys(us1.customerForm.get(4), "Tonga");
-        mySendKeys(us1.customerForm.get(5), "34432");
-        mySendKeys(us1.customerForm.get(6), "374354765");
-        mySendKeys(us1.customerForm.get(7), "131153203");
-        mySendKeys(us1.customerForm.get(8), "Isaacson");
-        mySendKeys(us1.customerForm.get(9), "Qx6YXX");
-        mySendKeys(us1.customerForm.get(10), "Qx6YXX");
-    }
-
-    @And("Click on the Register Submit button")
-    public void clickOnTheRegisterSubmitButton() {
-        myClick(us1.customerForm.get(11));
-    }
-
-    @And("User should see the success message")
-    public void userShouldSeeTheSuccessMessage() {
-        verifyContainsText(us1.successMessage, "success");
+    @Then("Enter username and password and click login button")
+    public void enterUsernameAndPasswordAndClickLoginButton() {
+        mySendKeys(us6.usernamePlc, "weagfdg");
+        mySendKeys(us6.passwordPlc, "T4rg8H!Kp6i7b");
+        myClick(us6.loginBtn);
     }
 }

@@ -1,4 +1,4 @@
-Feature:
+Feature: Registration
 
   Background:
     Given Navigate to Parabank website
