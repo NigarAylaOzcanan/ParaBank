@@ -17,7 +17,7 @@ public class US604_Content extends Parent {
     @FindBy(xpath = "//input[@class='button']") public WebElement getOpenNewAccountButton;
     @FindBy(xpath = "//div[@class='ng-scope']//p") public WebElement successMsg;
     @FindBy(xpath = "//div[@id='rightPanel']//a[@id='newAccountId']") public WebElement newAccountId;
-
+    @FindBy(xpath = "(//div[@class='ng-scope'])[2]") public WebElement accountDetails;
     public WebElement getWebElement(String strWebElement){
         switch (strWebElement){
             case "openNewAccount": return this.openNewAccount;
@@ -27,6 +27,7 @@ public class US604_Content extends Parent {
             case "getOpenNewAccountButton": return this.getOpenNewAccountButton ;
             case "successMsg": return this.successMsg ;
             case "newAccountId": return this.newAccountId ;
+            case "accountDetails": return this.accountDetails;
         }
         return null;
     }
