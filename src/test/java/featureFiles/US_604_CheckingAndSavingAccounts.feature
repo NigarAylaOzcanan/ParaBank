@@ -13,7 +13,7 @@ Feature: Checking And Savings Accounts Creation
 
     And The user sees a warning that the new bank account should have a minimum balance
 
-    And The user selects the account of <index> the from Drop-Down menu
+    And The user selects the account of <index> from the Drop-Down menu
 
     And Click on the Element in Content
       | openNewAccountButton |
