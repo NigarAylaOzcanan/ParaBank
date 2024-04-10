@@ -4,6 +4,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.Parent;
 import pages.US606_Content;
 
@@ -20,6 +21,7 @@ public class _DataTableStepts_ extends Parent {
             // GET THE ELEMENT AND CLICK
             myClick(us6.getWebElement(list.get(i)));
         }
+
     }
 
     @And("User sending the keys in Dialog")

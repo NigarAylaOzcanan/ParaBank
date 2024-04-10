@@ -12,8 +12,8 @@ public class _LoginSteps_ extends Parent {
 
     @Then("Enter username and password and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton() {
-        mySendKeys(us6.usernamePlc, "weagfdg");
-        mySendKeys(us6.passwordPlc, "T4rg8H!Kp6i7b");
+        mySendKeys(us6.usernamePlc, "Newton");
+        mySendKeys(us6.passwordPlc, "12345");
         myClick(us6.loginBtn);
     }
 

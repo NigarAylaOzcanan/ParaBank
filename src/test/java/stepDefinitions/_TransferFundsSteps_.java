@@ -1,8 +1,18 @@
 package stepDefinitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.Parent;
 import pages.US606_Content;
+import utilities.GWD;
+
+import java.awt.event.KeyEvent;
+import java.util.List;
 
 public class _TransferFundsSteps_ extends Parent {
 
@@ -10,12 +20,27 @@ public class _TransferFundsSteps_ extends Parent {
 
     @And("User should see the transfer complete message")
     public void userShouldSeeTheTransferCompleteMessage() {
-        verifyContainsText(us6.transferCompleteMessage, "complete");
+        verifyContainsText(us6.transferCompleteMessage, "Transfer Complete");
     }
 
     @And("User should see transfer sent and debit amount")
     public void userShouldSeeTransferSentAndDebitAmount() {
-        verifyContainsText(us6.transactionHistory.get(1), "sent");
-        verifyContainsText(us6.transactionHistory.get(2), "$");
+        wait(1);
+        List<WebElement> elements = GWD.getDriver().findElements(By.cssSelector("tr[ng-repeat=\"transaction in transactions\"]:nth-child(1) td"));
+        verifyContainsText(elements.get(1), "Funds Transfer Sent");
+        verifyContainsText(elements.get(2), "$");
+    }
+
+    @And("User enters transaction amount")
+    public void userEntersTransactionAmount(DataTable dt) {
+        List<List<String>> list = dt.asLists(String.class);
+
+        for (int i = 0; i < list.size(); i++) {
+            // GET THE NECESSARY WEB ELEMENT
+            wait(1);
+            WebElement txtBox = us6.getWebElement(list.get(i).get(0));
+            // SEND KEYS TO THAT ELEMENT
+            mySendKeys(txtBox, list.get(i).get(1));
+        }
     }
 }
