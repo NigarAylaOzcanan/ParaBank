@@ -13,7 +13,7 @@ import utilities.GWD;
 
 import java.util.List;
 
-public class _CheckingAccountCreationSteps extends Parent {
+public class _CheckingSavingsSteps extends Parent {
     US604_Content cnt = new US604_Content();
 
     @When("Click on the Element in Content")
