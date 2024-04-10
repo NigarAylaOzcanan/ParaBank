@@ -48,7 +48,7 @@ public class GWD {
         }catch (InterruptedException e){
             throw new RuntimeException(e);
         }
-        if (threadDriver.get() == null){
+        if (threadDriver.get() != null){
             threadDriver.get().quit();
             WebDriver driver= threadDriver.get();
             driver=null;
