@@ -18,5 +18,17 @@ public class US604_Content extends Parent {
     @FindBy(xpath = "//div[@class='ng-scope']//p") public WebElement successMsg;
     @FindBy(xpath = "//div[@id='rightPanel']//a[@id='newAccountId']") public WebElement newAccountId;
 
+    public WebElement getWebElement(String strWebElement){
+        switch (strWebElement){
+            case "openNewAccount": return this.openNewAccount;
+            case "selectAccountType": return this.selectAccountType ;
+            case "warningMessage": return this.warningMessage ;
+            case "selectAccount": return this.selectAccount ;
+            case "getOpenNewAccountButton": return this.getOpenNewAccountButton ;
+            case "successMsg": return this.successMsg ;
+            case "newAccountId": return this.newAccountId ;
+        }
+        return null;
+    }
 }
 
