@@ -25,8 +25,8 @@ public class US606_Content {
     @FindBy(linkText = "Transfer Funds")
     public WebElement transferFunds;
 
-    @FindBy(linkText = "18117")
-    public WebElement account_18117;
+    @FindBy(css = "tr > td > a")
+    public WebElement accountsOverviewAccountNum;
 
     @FindBy(linkText = "Accounts Overview")
     public WebElement accountsOverview;
@@ -54,8 +54,8 @@ public class US606_Content {
         switch (e) {
             case "transferFunds":
                 return this.transferFunds;
-            case "account_18117":
-                return this.account_18117;
+            case "accountNum":
+                return this.accountsOverviewAccountNum;
             case "accountsOverview":
                 return this.accountsOverview;
             case "amountPlc":

@@ -27,14 +27,14 @@ public class _RegistrationSteps_ extends Parent {
     @Then("Fill the registration information")
     public void fillTheRegistrationInformation() {
         mySendKeys(us1.customerForm.get(0), "Arpan");
-        mySendKeys(us1.customerForm.get(1), "Isaacson");
-        mySendKeys(us1.customerForm.get(2), "Ratios St 5206, Frankewing, Philippines, 848608");
+        mySendKeys(us1.customerForm.get(1), "Newton");
+        mySendKeys(us1.customerForm.get(2), "Ratios St 5206, Philippines, 848608");
         mySendKeys(us1.customerForm.get(3), "Pella");
         mySendKeys(us1.customerForm.get(4), "Tonga");
         mySendKeys(us1.customerForm.get(5), "34432");
         mySendKeys(us1.customerForm.get(6), "374354765");
         mySendKeys(us1.customerForm.get(7), "131153203");
-        mySendKeys(us1.customerForm.get(8), "Isaacson");
+        mySendKeys(us1.customerForm.get(8), "Newton");
         mySendKeys(us1.customerForm.get(9), "Qx6YXX");
         mySendKeys(us1.customerForm.get(10), "Qx6YXX");
     }

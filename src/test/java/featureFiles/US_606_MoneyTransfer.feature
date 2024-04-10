@@ -8,13 +8,7 @@ Feature: Money Transfer Between Accounts
     Then Click on the Element in Dialog
       | transferFunds |
 
-    And Click on the Element in Dialog
-      | accountsOverview |
-
-    Then Click on the Element in Dialog
-      | transferFunds |
-
-    And User sending the keys in Dialog
+    And User enters transaction amount
       | amountPlc | 50 |
 
     And Click on the Element in Dialog
@@ -26,6 +20,6 @@ Feature: Money Transfer Between Accounts
       | accountsOverview |
 
     And Click on the Element in Dialog
-      | account_18117 |
+      | accountNum |
 
     And User should see transfer sent and debit amount
