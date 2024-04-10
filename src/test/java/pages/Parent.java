@@ -14,7 +14,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class Parent {
-    public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(5));
+    public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
 
     public void myClick(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
