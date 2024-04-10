@@ -41,7 +41,7 @@ public class _CheckingSavingsSteps extends Parent {
         cnt.waitUntilVisibilityOf(cnt.warningMessage);
         System.out.println(cnt.warningMessage.getText());
     }
-    @And("The user selects the account of {int} the from Drop-Down menu")
+    @And("The user selects the account of {int} from the Drop-Down menu")
     public void theUserSelectsTheAccountOfIndexTheFromDropDownMenu(int index) {
         cnt.selectByIndex(cnt.selectAccount,index);
     }
