@@ -14,8 +14,8 @@ public class US604_Content extends Parent {
     @FindBy(xpath = "//select[@id='type']") public WebElement selectAccountType;
     @FindBy(xpath = "//*[contains(text(),'Please choose an existing account to transfer funds')]") public WebElement warningMessage;
     @FindBy(xpath = "//select[@id='fromAccountId']") public WebElement selectAccount;
-    @FindBy(xpath = "//input[@class='button']") public WebElement getOpenNewAccountButton;
-    @FindBy(xpath = "//div[@class='ng-scope']//p") public WebElement successMsg;
+    @FindBy(xpath = "//input[@class='button']") public WebElement openNewAccountButton;
+    @FindBy(xpath = "//p[contains(text(),'Congratulations, your account is now open.')]") public WebElement successMsg;
     @FindBy(xpath = "//div[@id='rightPanel']//a[@id='newAccountId']") public WebElement newAccountId;
     @FindBy(xpath = "(//div[@class='ng-scope'])[2]") public WebElement accountDetails;
     public WebElement getWebElement(String strWebElement){
@@ -24,7 +24,7 @@ public class US604_Content extends Parent {
             case "selectAccountType": return this.selectAccountType ;
             case "warningMessage": return this.warningMessage ;
             case "selectAccount": return this.selectAccount ;
-            case "getOpenNewAccountButton": return this.getOpenNewAccountButton ;
+            case "openNewAccountButton": return this.openNewAccountButton ;
             case "successMsg": return this.successMsg ;
             case "newAccountId": return this.newAccountId ;
             case "accountDetails": return this.accountDetails;
