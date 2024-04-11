@@ -50,7 +50,7 @@ The environment we will use for this sprint: [https://parabank.parasoft.com/](ht
 > > > the account opening process, I must verify that I have successfully registered. So I can access my private bank
 > > > services.
 
-![US_601_Reg.gif](img/US_601_Reg.gif)
+![US_601_Reg.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_601_Reg.gif)
 
 ### Acceptance Criteria (AC01):
 
@@ -113,8 +113,8 @@ Accounts, Smoke, Regression
 > > > and
 > > > invalid user information. So I can be sure that I have accessed the site safely.
 
-![US_602_Login.gif](img/US_602_Login.gif)
-![US_602_Login_Neg.gif](img/US_602_Login_Neg.gif)
+![US_602_Login.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_602_Login.gif)
+![US_602_Login_Neg.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_602_Login_Neg.gif)
 
 ### Acceptance Criteria (AC02):
 
@@ -167,7 +167,7 @@ Accounts, Smoke, Regression
 > > > spend
 > > > on invoice transactions.
 
-![US_603_BillPayment.gif](img/US_603_BillPayment.gif)
+![US_603_BillPayment.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_603_BillPayment.gif)
 
 ### Acceptance Criteria (AC03):
 
@@ -234,8 +234,8 @@ Payment, Smoke, Regression
 > > > As a user, I want to be able to create futures and demand accounts. Thus, I can better organize my financial
 > > > transactions and manage efficiently.
 
-![US_604_NewAccount.gif](img/US_604_NewAccount.gif)
-![US_604_NewAccount2.gif](img/US_604_NewAccount2.gif)
+![US_604_NewAccount.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_604_NewAccount.gif)
+![US_604_NewAccount2.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_604_NewAccount2.gif)
 
 ### Acceptance Criteria (AC04):
 
@@ -303,7 +303,7 @@ Accounts, Smoke, Regression
 > > > As a user, I would like to transfer money from one of my current accounts to another. In this way, I can quickly
 > > > meet my different financial needs.
 
-![US_606_TransferFunds.gif](img/US_606_TransferFunds.gif)
+![US_606_TransferFunds.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_606_TransferFunds.gif)
 
 ### Acceptance Criteria (AC06):
 
@@ -367,7 +367,7 @@ Loan, Accounts, Regression
 > > > when
 > > > communicating and transactions.
 
-![US_607_UpdateContact.gif](img/US_607_UpdateContact.gif)
+![US_607_UpdateContact.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_607_UpdateContact.gif)
 
 ### Acceptance Criteria (AC07):
 
@@ -434,7 +434,7 @@ Contact, Regression
 > > > As a customer, I would like to apply for a loan through the Parabank website. This way, I can get the financing I
 > > > need and follow the status of my application.
 
-![US_608_Loan_Credit.gif](img/US_608_Loan_Credit.gif)
+![US_608_Loan_Credit.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_608_Loan_Credit.gif)
 
 ### Acceptance Criteria (AC08):
 
