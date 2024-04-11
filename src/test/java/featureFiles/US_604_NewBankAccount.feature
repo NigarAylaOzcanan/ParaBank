@@ -1,4 +1,4 @@
-Feature: Checking And Savings Accounts Creation
+Feature: Futures and Demand Accounts Creation
 
   Background:
     Given Navigate to Parabank website
