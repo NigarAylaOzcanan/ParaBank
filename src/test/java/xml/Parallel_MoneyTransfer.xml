@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
 
-<suite name="Parallel Tests" parallel="tests" thread-count="3">
+<suite name="Money Transfer Parallel Test" parallel="tests" thread-count="3">
 
     <test name="test1">
         <parameter name="browserType" value="chrome"></parameter>
 
         <classes>
-            <class name="runners.Parallel_AllRunner"></class>
+            <class name="runners.Parallel_MoneyTransfer"></class>
         </classes>
     </test>
 
@@ -15,7 +15,7 @@
         <parameter name="browserType" value="edge"></parameter>
 
         <classes>
-            <class name="runners.Parallel_AllRunner"></class>
+            <class name="runners.Parallel_MoneyTransfer"></class>
         </classes>
     </test>
 
@@ -23,7 +23,7 @@
         <parameter name="browserType" value="firefox"></parameter>
 
         <classes>
-            <class name="runners.Parallel_AllRunner"></class>
+            <class name="runners.Parallel_MoneyTransfer"></class>
         </classes>
     </test>
 
