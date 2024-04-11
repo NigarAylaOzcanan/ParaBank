@@ -2,6 +2,7 @@
 
 **One Week Sprint**
 **URL:** [Parasoft Project](https://parabank.parasoft.com/)
+
 **Alternative URL:** [Parasoft Project](https://para.testar.org/)
 
 ## Project Description:
@@ -23,7 +24,7 @@ The environment we will use for this sprint: [https://parabank.parasoft.com/](ht
 |------------------------------------------|-----------------------------------------------------------|----------------------------|
 | [US_601: User Registration]()            | [Erdem Gürel](https://github.com/artam109)                | QA Engineer                |
 | [US_602: User Login]()                   | [Onur Girgin](https://github.com/Mednasa)                 | QA Engineer                |
-| [US_603: Bill Payment Functionality]()   | [Ahmet Kaya](https://github.com/0AhmetKaya0)              | QA Engineer                |
+| [US_603: Bill Payment Functionality]()   | [Onur Girgin](https://github.com/Mednasa)             | QA Engineer                |
 | [US_604: Account Creation]()             | [Nigar Ayla Özcanan](https://github.com/NigarAylaOzcanan) | Project Lead & QA Engineer |
 | [US_605: N/A]()                          | [N/A](N/A)                                                | N/A                        |
 | [US_606: Inter-Account Money Transfer]() | [Erdem Gürel](https://github.com/artam109)                | QA Engineer                |
