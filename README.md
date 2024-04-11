@@ -50,8 +50,7 @@ The environment we will use for this sprint: [https://parabank.parasoft.com/](ht
 > > > the account opening process, I must verify that I have successfully registered. So I can access my private bank
 > > > services.
 
-![US_601_Reg.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_601_Reg.gif)
-
+![US_601_Reg](https://github.com/NigarAylaOzcanan/ParaBank_CucumberProject/assets/158833043/1fe4efef-ff66-44da-ac66-92658f1e5b6c)
 ### Acceptance Criteria (AC01):
 
 1. The user must navigate to the ParaBank website.
@@ -113,8 +112,9 @@ Accounts, Smoke, Regression
 > > > and
 > > > invalid user information. So I can be sure that I have accessed the site safely.
 
-![US_602_Login.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_602_Login.gif)
-![US_602_Login_Neg.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_602_Login_Neg.gif)
+![US_602_Login](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/600b1e32-a666-4c69-ab1e-b9f7768aba05)
+
+![US_602_Login_Neg](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/882abda4-1bf0-4110-83aa-06b16f3b06f1)
 
 ### Acceptance Criteria (AC02):
 
@@ -167,7 +167,7 @@ Accounts, Smoke, Regression
 > > > spend
 > > > on invoice transactions.
 
-![US_603_BillPayment.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_603_BillPayment.gif)
+![US_603_BillPayment](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/d17c3a85-6161-4656-95ef-70004c730d53)
 
 ### Acceptance Criteria (AC03):
 
@@ -234,8 +234,9 @@ Payment, Smoke, Regression
 > > > As a user, I want to be able to create futures and demand accounts. Thus, I can better organize my financial
 > > > transactions and manage efficiently.
 
-![US_604_NewAccount.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_604_NewAccount.gif)
-![US_604_NewAccount2.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_604_NewAccount2.gif)
+![US_604_NewAccount](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/59340293-1708-4e66-b5f7-bb035e8e5fc8)
+
+![US_604_NewAccount2](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/d3a3a9ec-b31f-4d22-ae0b-8c867f700aa0)
 
 ### Acceptance Criteria (AC04):
 
@@ -303,7 +304,7 @@ Accounts, Smoke, Regression
 > > > As a user, I would like to transfer money from one of my current accounts to another. In this way, I can quickly
 > > > meet my different financial needs.
 
-![US_606_TransferFunds.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_606_TransferFunds.gif)
+![US_606_TransferFunds](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/7d8faa7b-830a-4e4e-8514-3633efed1a97)
 
 ### Acceptance Criteria (AC06):
 
@@ -367,7 +368,7 @@ Loan, Accounts, Regression
 > > > when
 > > > communicating and transactions.
 
-![US_607_UpdateContact.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_607_UpdateContact.gif)
+![US_607_UpdateContact](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/00d9f013-9d46-45aa-b18e-793c9e90542c)
 
 ### Acceptance Criteria (AC07):
 
@@ -434,7 +435,7 @@ Contact, Regression
 > > > As a customer, I would like to apply for a loan through the Parabank website. This way, I can get the financing I
 > > > need and follow the status of my application.
 
-![US_608_Loan_Credit.gif](..%2F..%2FDesktop%2FCucumberProjects%2FProject6_ParaBank%2Fimg%2FUS_608_Loan_Credit.gif)
+![US_608_Loan_Credit](https://github.com/NigarAylaOzcanan/LogicBreakers_DemoWebShopProject/assets/158833043/439462b4-ea09-41a8-a834-2234fd1e32a1)
 
 ### Acceptance Criteria (AC08):
 
