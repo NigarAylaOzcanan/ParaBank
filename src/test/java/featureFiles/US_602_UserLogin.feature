@@ -4,7 +4,7 @@ Feature: Login functionality
     Given Navigate to Parabank website
 
   Scenario: Valid username and password combination
-    When Enter username is "weagfdg" password as "T4rg8H!Kp6i7b"
+    When Enter username is "Newton" password as "Qx6YXX"
     And Enter log out button
 
   Scenario: Invalid username and password combination
