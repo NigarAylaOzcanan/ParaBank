@@ -1,3 +1,4 @@
+@Accounts @Smoke @Regression
 Feature: Futures and Demand Accounts Creation
 
   Background:
@@ -5,6 +6,7 @@ Feature: Futures and Demand Accounts Creation
     Then Enter username and password and click login button
 
   Scenario Outline: Open a Bank Account With Minimum Balance
+
     When Click on the Element in Content
       | openNewAccount |
     And The user is directed to the bank account creating page
