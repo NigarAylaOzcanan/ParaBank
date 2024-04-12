@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import utilities.ExcelUtility;
 import utilities.GWD;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -14,12 +13,8 @@ public class Hooks {
     public void before (){
         System.out.println( " Scenario is running...");
     }
-
     @After
     public void after (Scenario scenario){
-
-        ExcelUtility.writeToExcel("src/test/java/ApachePOI/resource/CucumberTestResults.xlsx",
-               scenario.getName()+" "+(scenario.isFailed()? "Failed": "Passed") );
 
         if (scenario.isFailed()){
             TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
