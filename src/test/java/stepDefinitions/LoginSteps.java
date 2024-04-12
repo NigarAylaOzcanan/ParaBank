@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import pages.Parent;
 import pages.US602_Content;
 import pages.US606_Content;
+import utilities.ConfigReader;
 
 public class LoginSteps extends Parent {
     US606_Content us6 = new US606_Content();
@@ -12,8 +13,8 @@ public class LoginSteps extends Parent {
 
     @Then("Enter username and password and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton() {
-        mySendKeys(us6.usernamePlc, "Newton");
-        mySendKeys(us6.passwordPlc, "12345");
+        mySendKeys(us6.usernamePlc, ConfigReader.getProperty("username"));
+        mySendKeys(us6.passwordPlc, ConfigReader.getProperty("password"));
         myClick(us6.loginBtn);
     }
     @When("Enter username as {string} password as {string}")
