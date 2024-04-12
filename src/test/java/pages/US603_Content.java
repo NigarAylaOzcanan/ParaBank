@@ -19,6 +19,12 @@ public class US603_Content extends Parent{
     @FindBy(css="[type='submit']")
     public WebElement sendPaymentCl;
 
+    @FindBy(linkText = "Bill Pay")
+    public WebElement billPayBtn;
+
+    @FindBy(linkText = "Accounts Overview")
+    public WebElement accountsOverviewBtn;
+
 
 
 
