@@ -7,7 +7,7 @@ import utilities.GWD;
 
 import java.util.List;
 
-public class US603_Content extends Parent{
+public class US603_Content extends Parent {
 
     public US603_Content() {
         PageFactory.initElements(GWD.getDriver(), this);
@@ -16,7 +16,7 @@ public class US603_Content extends Parent{
     @FindBy(css = "tbody > tr input")
     public List<WebElement> payeeInformation;
 
-    @FindBy(css="[type='submit']")
+    @FindBy(css = "[type='submit']")
     public WebElement sendPaymentCl;
 
     @FindBy(linkText = "Bill Pay")
@@ -25,7 +25,8 @@ public class US603_Content extends Parent{
     @FindBy(linkText = "Accounts Overview")
     public WebElement accountsOverviewBtn;
 
-
+    @FindBy(xpath = "(//*[@class='ng-binding'])[1]")
+    public WebElement accountNumberCl;
 
 
 }
