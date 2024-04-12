@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 import pages.Parent;
 import pages.US603_Content;
 
-public class _BillPaySteps_ extends Parent {
+public class BillPaySteps extends Parent {
     US603_Content us3=new US603_Content();
     @When("Click on the Bill Pay Button")
     public void clickOnTheBillPayButton() {
@@ -17,7 +17,6 @@ public class _BillPaySteps_ extends Parent {
     public void clickOnTheSendPaymentButton() {
         myClick(us3.sendPaymentCl);
     }
-
     @Then("Fill the payee Electric information")
     public void fillThePayeeElectricInformation() {
         mySendKeys(us3.payeeInformation.get(0),"EnerjiSA Elektrik Faturasi");
@@ -30,12 +29,10 @@ public class _BillPaySteps_ extends Parent {
         mySendKeys(us3.payeeInformation.get(7),"1122");
         mySendKeys(us3.payeeInformation.get(8),"85");
     }
-
     @And("Click on the Accounts Overview button")
     public void clickOnTheAccountsOverviewButton() {
         myClick(us3.accountsOverviewBtn);
     }
-
     @Then("Fill the payee Water information")
     public void fillThePayeeWaterInformation() {
         mySendKeys(us3.payeeInformation.get(0),"ISKI Su Faturasi");
@@ -48,7 +45,6 @@ public class _BillPaySteps_ extends Parent {
         mySendKeys(us3.payeeInformation.get(7),"3344");
         mySendKeys(us3.payeeInformation.get(8),"45");
     }
-
     @Then("Fill the payee Natural Gas invoice information")
     public void fillThePayeeNaturalGasInvoiceInformation() {
         mySendKeys(us3.payeeInformation.get(0),"IGDAS Dogalgaz Faturasi");

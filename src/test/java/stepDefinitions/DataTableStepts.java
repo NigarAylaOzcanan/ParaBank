@@ -4,13 +4,12 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.Parent;
 import pages.US606_Content;
 
 import java.util.List;
 
-public class _DataTableStepts_ extends Parent {
+public class DataTableStepts extends Parent {
     US606_Content us6 = new US606_Content();
 
     @Then("Click on the Element in Dialog")
@@ -21,9 +20,7 @@ public class _DataTableStepts_ extends Parent {
             // GET THE ELEMENT AND CLICK
             myClick(us6.getWebElement(list.get(i)));
         }
-
     }
-
     @And("User sending the keys in Dialog")
     public void userSendingTheKeysInDialog(DataTable dt) {
         List<List<String>> list = dt.asLists(String.class);

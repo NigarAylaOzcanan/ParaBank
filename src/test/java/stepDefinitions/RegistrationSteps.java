@@ -9,21 +9,17 @@ import pages.US601_Content;
 import utilities.ConfigReader;
 import utilities.GWD;
 
-public class _RegistrationSteps_ extends Parent {
-
+public class RegistrationSteps extends Parent {
     US601_Content us1 = new US601_Content();
-
     @Given("Navigate to Parabank website")
     public void navigateToParabankWebsite() {
         GWD.getDriver().get(ConfigReader.getProperty("URL"));
     }
-
     @When("Click on the Register button")
     public void clickOnTheRegisterButton() {
         myClick(us1.registerBtn);
 
     }
-
     @Then("Fill the registration information")
     public void fillTheRegistrationInformation() {
         mySendKeys(us1.customerForm.get(0), "Arpan");
@@ -38,12 +34,10 @@ public class _RegistrationSteps_ extends Parent {
         mySendKeys(us1.customerForm.get(9), "Qx6YXX");
         mySendKeys(us1.customerForm.get(10), "Qx6YXX");
     }
-
     @And("Click on the Register Submit button")
     public void clickOnTheRegisterSubmitButton() {
         myClick(us1.customerForm.get(11));
     }
-
     @And("User should see the success message")
     public void userShouldSeeTheSuccessMessage() {
         verifyContainsText(us1.successMessage, "success");

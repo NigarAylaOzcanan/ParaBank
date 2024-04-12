@@ -13,7 +13,7 @@ import utilities.GWD;
 
 import java.util.List;
 
-public class _NewBankAccountSteps_ extends Parent {
+public class NewBankAccountSteps extends Parent {
     US604_Content cnt = new US604_Content();
 
     @When("Click on the Element in Content")
