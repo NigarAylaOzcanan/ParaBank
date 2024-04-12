@@ -25,8 +25,11 @@ public class US603_Content extends Parent {
     @FindBy(linkText = "Accounts Overview")
     public WebElement accountsOverviewBtn;
 
-    @FindBy(xpath = "(//*[@class='ng-binding'])[1]")
+    @FindBy(xpath = "//a[starts-with(@href,'activity.htm?')]")
     public WebElement accountNumberCl;
+
+    @FindBy(xpath = "//*[text()='See Account Activity for more details.']")
+    public WebElement billPaymentValid;
 
 
 }

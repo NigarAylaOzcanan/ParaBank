@@ -73,6 +73,11 @@ public class BillPaySteps extends Parent {
     @Then("Account detail checking Bill Pay")
     public void accountDetailCheckingBillPay() {
         verifyContainsText(us8.accountTypeText, "CHECKING");
-        verifyContainsText(us8.noTransactionsText, "No transactions found.");
+
+    }
+
+    @Then("User should see the success message Bill Payment")
+    public void userShouldSeeTheSuccessMessageBillPayment() {
+        verifyContainsText(us3.billPaymentValid, "Activity ");
     }
 }

@@ -9,7 +9,7 @@ Feature: Bill Payment Functionality
     When Click on the Bill Pay Button
     Then Fill the payee Electric information
     And Click on the Send Payment button
-    Then User should see the success message
+    Then User should see the success message Bill Payment
     And Click on the Accounts Overview button
     And Account number Click
     Then Account detail checking Bill Pay
@@ -19,7 +19,7 @@ Feature: Bill Payment Functionality
     When Click on the Bill Pay Button
     Then Fill the payee Water information
     And Click on the Send Payment button
-    Then User should see the success message
+    Then User should see the success message Bill Payment
     And Click on the Accounts Overview button
     And Account number Click
     Then Account detail checking Bill Pay
@@ -29,7 +29,7 @@ Feature: Bill Payment Functionality
     When Click on the Bill Pay Button
     Then Fill the payee Natural Gas invoice information
     And Click on the Send Payment button
-    Then User should see the success message
+    Then User should see the success message Bill Payment
     And Click on the Accounts Overview button
     And Account number Click
     Then Account detail checking Bill Pay
