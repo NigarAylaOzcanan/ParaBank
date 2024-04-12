@@ -3,26 +3,20 @@ package stepDefinitions;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.Parent;
 import pages.US606_Content;
 import utilities.GWD;
 
-import java.awt.event.KeyEvent;
 import java.util.List;
 
-public class _TransferFundsSteps_ extends Parent {
+public class TransferFundsSteps extends Parent {
 
     US606_Content us6 = new US606_Content();
-
     @And("User should see the transfer complete message")
     public void userShouldSeeTheTransferCompleteMessage() {
         verifyContainsText(us6.transferCompleteMessage, "Transfer Complete");
     }
-
     @And("User should see transfer sent and debit amount")
     public void userShouldSeeTransferSentAndDebitAmount() {
         wait(1);
@@ -30,7 +24,6 @@ public class _TransferFundsSteps_ extends Parent {
         verifyContainsText(elements.get(1), "Funds Transfer Sent");
         verifyContainsText(elements.get(2), "$");
     }
-
     @And("User enters transaction amount")
     public void userEntersTransactionAmount(DataTable dt) {
         List<List<String>> list = dt.asLists(String.class);
