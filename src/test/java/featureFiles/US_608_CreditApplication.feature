@@ -1,10 +1,10 @@
+@Loan @Accounts @Regression
 Feature: Credit Application
 
   Background:
     Given Navigate to Parabank website
     When Enter username is "Newton" password as "Qx6YXX"
 
-  @Regression
   Scenario: Request Credit
     Given Click on the Element
       | requestLoanBtn |
@@ -22,11 +22,8 @@ Feature: Credit Application
 
     And Click on the Element
       | newAccountIdCl |
-
     Then Account detail checking and verification
 
-
-  @Regression
   Scenario: Request Credit (Negative)
     Given Click on the Element
       | requestLoanBtn |

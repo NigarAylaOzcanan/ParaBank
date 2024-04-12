@@ -1,3 +1,4 @@
+@Payment @Regression
 Feature: Money Transfer Between Accounts
 
   Background:

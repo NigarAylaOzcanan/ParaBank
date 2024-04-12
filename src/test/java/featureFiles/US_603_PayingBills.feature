@@ -1,3 +1,4 @@
+@Payment @Smoke
 Feature: Bill Payment Functionality
   Background:
     Given Navigate to Parabank website

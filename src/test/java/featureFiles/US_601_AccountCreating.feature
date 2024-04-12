@@ -1,3 +1,4 @@
+@Accounts @Smoke
 Feature: Registration
 
   Background:
