@@ -3,7 +3,7 @@ Feature: Bill Payment Functionality
 
   Background:
     Given Navigate to Parabank website
-    When Enter username is "Newton" password as "Qx6YXX"
+    When Enter username as "Newton" password as "Qx6YXX"
 
   Scenario: Electric Bill Payment
     When Click on the Bill Pay Button

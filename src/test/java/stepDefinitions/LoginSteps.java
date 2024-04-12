@@ -16,7 +16,7 @@ public class LoginSteps extends Parent {
         mySendKeys(us6.passwordPlc, "12345");
         myClick(us6.loginBtn);
     }
-    @When("Enter username is {string} password as {string}")
+    @When("Enter username as {string} password as {string}")
     public void enterUsernameIsPasswordAs(String username, String password) {
         mySendKeys(us6.usernamePlc,username);
         mySendKeys(us6.passwordPlc,password);

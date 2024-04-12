@@ -3,7 +3,7 @@ Feature: Credit Application
 
   Background:
     Given Navigate to Parabank website
-    When Enter username is "Newton" password as "Qx6YXX"
+    When Enter username as "Newton" password as "Qx6YXX"
 
   Scenario: Request Credit
     Given Click on the Element

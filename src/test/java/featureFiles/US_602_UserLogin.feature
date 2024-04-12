@@ -5,11 +5,11 @@ Feature: Login functionality
     Given Navigate to Parabank website
 
   Scenario: Valid username and password combination
-    When Enter username is "Newton" password as "Qx6YXX"
+    When Enter username as "Newton" password as "Qx6YXX"
     And Enter log out button
 
   Scenario: Invalid username and password combination
-    When Enter username is "" password as "123654"
+    When Enter username as "" password as "123654"
     Then Failed message should be displayed
 
 
