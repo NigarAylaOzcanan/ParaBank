@@ -9,7 +9,7 @@ import pages.Parent;
 import pages.US608_Content;
 import java.util.List;
 
-public class RequestCreditSteps extends Parent {
+public class LoanApplicationSteps extends Parent {
     US608_Content us8 = new US608_Content();
     @Given("Click on the Element")
     public void clickOnTheElement(DataTable dt) {

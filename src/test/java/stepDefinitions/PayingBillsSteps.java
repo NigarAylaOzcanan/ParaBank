@@ -7,7 +7,7 @@ import pages.Parent;
 import pages.US603_Content;
 import pages.US608_Content;
 
-public class BillPaySteps extends Parent {
+public class PayingBillsSteps extends Parent {
     US603_Content us3 = new US603_Content();
     US608_Content us8 = new US608_Content();
 

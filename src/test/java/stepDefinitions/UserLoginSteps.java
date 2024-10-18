@@ -7,7 +7,7 @@ import pages.US602_Content;
 import pages.US606_Content;
 import utilities.ConfigReader;
 
-public class LoginSteps extends Parent {
+public class UserLoginSteps extends Parent {
     US606_Content us6 = new US606_Content();
     US602_Content us2=new US602_Content();
 
